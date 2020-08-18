@@ -10,14 +10,24 @@
     <section>
         <div class="logo">iCafe</div>
         <!-- <img src="iCafe_0.2/data/pictures/bg.jpg" alt="" class="bg">-->
-        <video src="data/video/bg.mp4" muted loop autoplay class="bg"></video>
-        <div class="content">
-            <h2>Интернет кафе<br></h2>
-            <p>Ксерокс, печать, фото на документы, ламинация, интернет развлечения, ремонт и обслуживание компьютерной техники.
-                Мы работаем круглосуточно, а ещё у нас есть вкусный Кофе</p>
-                <a href="mailto:fdn_2004@ukr.net">Отправить файл на печать</a>
-        </div>
-        <p class="copyrightText">©2020 iCafe</p>
+            <video src="data/video/bg.mp4" muted loop autoplay class="bg"></video>
+                <div class="box">
+                    <div class="content">
+                        <h2>Интернет кафе<br></h2>
+                            <p>Ксерокс, печать, фото на документы, ламинация, интернет развлечения, ремонт и обслуживание компьютерной техники.
+                             Мы работаем круглосуточно, а ещё у нас есть вкусный Кофе</p>
+                                <a href="mailto:fdn_2004@ukr.net">Отправить файл на печать</a>
+                    </div>
+                </div>
+                <svg>
+                    <filter id="wavy">
+                        <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2">  
+                            <animate attributeName="baseFrequency" dur="60s" values="0.02;0.05;0.02" repeatCount="indefinite"/>                         
+                        </feTurbulence>
+                        <feDisplacementMap in="SourceGraphic" scale="30"/>
+                    </filter>
+                </svg>
+            <p class="copyrightText">©2020 iCafe</p>
     </section>
     <script src="java/mainJs.js"></script>
 </body>
